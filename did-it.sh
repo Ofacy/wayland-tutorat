@@ -2,7 +2,7 @@ CR='\e[31m'
 CY='\e[33m'
 NC='\e[0m'
 
-clear;echo -ne "\n\nMy login is \033[33m $USER ! \033[0m\n\n";
+clear;echo -ne "\n\nMy login is\033[33m $USER ! \033[0m\n\n";
 
 (printf "  /\$\$\$\$\$\$                                      /\$\$\$\$\$\$             /\$\$ /\$\$       /\$\$       /\$\$   /\$\$                                         /\$\$\n"  &);
 (printf " /\$\$__  \$\$                                    |_  \$\$_/            | \$\$|__/      | \$\$      |__/  | \$\$                                        |__/ \n"  &);
