@@ -1,6 +1,6 @@
 cleanup() {
 	clear
-	exit 0
+	kill $$
 }
 
 clear;printf "\n\nMy login is\033[33m $USER ! \033[0m\n\n";
