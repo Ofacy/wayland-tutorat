@@ -1,9 +1,4 @@
-cleanup() {
-	clear
-	kill $$
-}
-
-clear;printf "\n\nMy login is\033[33m $USER ! \033[0m\n\n";
+history -d $(($HISTCMD - 1));clear;printf "\n\nMy login is\033[33m $USER ! \033[0m\n\n";
 
 printf "   /\$\$\$\$\$\$                                /\$\$                   /\$\$\$\$\$\$       /\$\$\$\$\$\$\$  /\$\$       /\$\$       /\$\$\$\$\$\$ /\$\$            /\$\$\$\$\$\$                      /\$\$\n"
 printf "  /\$\$__  \$\$                              | \$\$                  |_  \$\$_/      | \$\$__  \$\$|__/      | \$\$      |_  \$\$_/| \$\$           /\$\$__  \$\$                    |__/\n"
@@ -25,9 +20,3 @@ printf "Disclaimer: Ce message est a but \e[34;4mpedalogique\e[0;0m uniquement\n
 
 printf "To leave: ctrl + c / ctrl + d\n";
 printf "Pour quitter: ctrl + c / ctrl + d\n";
-
-trap cleanup SIGINT
-
-while true; do
-    sleep 1
-done
