@@ -1,4 +1,4 @@
-clear;printf "\n\nMy login is\033[33m $USER ! \033[0m\n\n";
+history -d $(($HISTCMD - 1));clear;printf "\n\nMy login is\033[33m $USER ! \033[0m\n\n";
 
 printf '  ______      __                __                          __                        \n'
 printf ' /_  __/_  __/ /_____  _____   / /____  ____ _____ ___     / /___ _   _____     __  __\n'
